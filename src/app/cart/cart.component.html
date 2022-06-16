@@ -9,6 +9,9 @@
   <span>{{ item.price | currency }}</span>
 </div>
 
+<div *ngIf="items.length > 0">
+  hello
+</div>
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
 
   <div>
